@@ -262,7 +262,15 @@ desired effect
                 </div>
                 -->
                 <ul class="nav nav-stacked">
-                  <li><a href="#">Javascript <span class="pull-right badge bg-blue">9/10</span></a></li>
+                <% myskills.forEach(function(myskill){ %>
+                    <li><a href="#"><%= myskill.skill %>
+                      <span class="pull-right badge bg-blue">
+                      <% for (var i = 0; i < myskill.note; i++) { %>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                      <% } %>
+                     <%= myskill.note %>/10</span></a></li>
+                <% }); %>
+                  
                   <li><a href="#">Javascript <span class="pull-right badge bg-blue">9/10</span></a></li>
                 </ul> 
                   
@@ -284,27 +292,22 @@ desired effect
               <!-- /.box-header -->
               <div class="box-body">
                 <ul class="nav nav-stacked">
+                  
+                  <% for (var i = 0; i < 20; i++) { %>
+                  <% var user = users [i]; %>
                   <div class="pull-right">
                       <button class="btn btn-primary">contact</button>
                   </div>
                   <li>
                       <div class="user-block" style="margin-bottom:10px;">
-                        <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
-                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                        <span class="description">Shared publicly - 7:30 PM Today</span>
+                        <img class="img-circle" src="../profile/<%= user.picture %>" alt="User Image">
+                        <span class="username"><a href="#"><%= user.first_name %> <%= user.last_name %></a></span>
+                        <span class="description"><%= user.position %></span>
                       </div>
                   </li>
-                  <li>
-                    <div class="pull-right">
-                      <button class="btn btn-primary">contact</button>
-                    </div>
-                    <div class="user-block" style="margin-bottom:10px;margin-top:10px;">
-                        <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Image">
-                        <span class="username"><a href="#">Jonathan Burke Jr.</a></span>
-                        <span class="description">Shared publicly - 7:30 PM Today</span>
-                    </div>
-
-                  </li>
+                  <% 
+                  }; %>
+                 
                   
                 </ul>
                 

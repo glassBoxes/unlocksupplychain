@@ -1,11 +1,13 @@
 var express = require('express');
-var users = require('../data/data-skillmatch.js')
+var data = require('../data/data-skillmatch.js')
 var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-	console.log(users)
-  res.render('skillmatch/index', { title: 'Express' });
+	var users = data.users;
+	var categories = data.categories;
+	var myskills = data.myskills;
+  	res.render('skillmatch/index', { title: 'Express', users:users,categories:categories,myskills:myskills });
 });
 
 module.exports = router;
