@@ -228,7 +228,11 @@ desired effect
                 <td style="vertical-align: middle">Whatever you do on slack, it's reflected everywhere. It will keep your place so you can always pick up wherever you left off.</td>
                 <td>
                   <div>
+                  <% if (hasSlack == 'true') {%>
+                  <a type="button" class="btn btn-block btn-success loggeddin" href="/skillmatch/integration">Logged in</a>
+                  <%} else {%>
                   <a href="https://slack.com/oauth/authorize?client_id=42172077798.48238370917&scope=read&redirect_uri=https://hacktheoffice-winners.herokuapp.com/skillmatch/auth/slack" class="btn btn-block btn-default">Log in</a>
+                  <% } %>
                     </div>
                   </div>
                 </td>
@@ -312,7 +316,7 @@ desired effect
         </div>      <div class="col-lg-6">
         <div class="box box-default">
           <div class="box-header with-border">
-            <i class="fa fa-bullhorn"></i>
+            <i class="fa fa-envelope"></i>
 
             
             <h3 class="box-title">Emailing Services</h3>
