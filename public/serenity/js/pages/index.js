@@ -21,6 +21,7 @@ $(function () {
     datasets: [
       {
         label: "Malcolm",
+        lineColor: "rgb(240,35,17)",
         fillColor: "rgb(240,35,17)",
         strokeColor: "rgb(240,35,17)",
         pointColor: "rgb(240,35,17)",
@@ -31,6 +32,7 @@ $(function () {
       },
       {
         label: "Moyenne",
+        lineColor: "rgba(102,102,102, 1)",
         fillColor: "rgba(102,102,102, 1)",
         strokeColor: "rgba(102,102,102, 1)",
         pointColor: "#555",
@@ -78,11 +80,14 @@ $(function () {
     //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
     maintainAspectRatio: true,
     //Boolean - whether to make the chart responsive to window resizing
-    responsive: true
+    responsive: true,
   };
 
   //Create the line chart
   salesChart.Line(salesChartData, salesChartOptions);
+
+  legend(document.getElementById("js-legend"), salesChartData);
+
 
   //---------------------------
   //- END MONTHLY SALES CHART -
