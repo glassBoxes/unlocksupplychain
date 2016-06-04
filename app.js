@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var port     = process.env.PORT;
 var routes = require('./routes/index');
 var users = require('./routes/routes2');
+var harry = require('./routes/harry');
 //var port = process.ENV.PORT;
 var app = express();
 
@@ -24,6 +25,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/skillmatch', routes);
 app.use('/serenity', users);
+app.use('/harry', harry);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

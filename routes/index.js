@@ -29,10 +29,10 @@ router.post('/search', function(req, res, next) {
 		var category1 = categories[random];
 		var category2 = categories[random1];
 		var category3 = categories[random2];
-		user.skill = [,category1, category2, category3];
+		user.skill = [{skills:req.body.search},category1, category2, category3];
 
 	});
-  	res.render('skillmatch/search', { title: 'Express', users:users });
+  	res.render('skillmatch/search1', { title: 'Express', users:users });
 });
 
 router.get('/network', function(req, res, next) {
