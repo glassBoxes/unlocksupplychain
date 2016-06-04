@@ -88,4 +88,16 @@ $(function () {
   //- END MONTHLY SALES CHART -
   //---------------------------
 
+// CALENDAR
+
+//The Calender
+  $("#calendar").datepicker({
+    "multidate": true,
+    "defaultViewDate": {
+      "year": 2016,
+      "month": 6,
+      "day": 5
+    }
+  });
+
 });
