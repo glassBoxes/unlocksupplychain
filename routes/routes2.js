@@ -1,4 +1,5 @@
 var express = require('express');
+var users = require('../data/data-serenity.js')
 var router = express.Router();
 
 /* GET users listing. */
