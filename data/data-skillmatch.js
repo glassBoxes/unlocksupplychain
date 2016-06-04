@@ -108,7 +108,83 @@ myskills: [{"id":1,"skill":"Data Architect","note":5},
 {"id":7,"skill":"CSS","note":7},
 {"id":8,"skill":"Information Architect","note":7},
 {"id":9,"skill":"Modelling and 3D design","note":10},
-{"id":10,"skill":"Network Architect","note":1}]
+{"id":10,"skill":"Network Architect","note":1}],
+skills:[{
+  "id": 1,
+  "skills": "web 2.0"
+}, {
+  "id": 2,
+  "skills": "android"
+}, {
+  "id": 3,
+  "skills": "Modelling and 3D design"
+}, {
+  "id": 4,
+  "skills": "e-mail marketing"
+}, {
+  "id": 5,
+  "skills": "Business Process Outsourcing"
+}, {
+  "id": 6,
+  "skills": "SEO web"
+}, {
+  "id": 7,
+  "skills": "SAS"
+}, {
+  "id": 8,
+  "skills": "R"
+}, {
+  "id": 9,
+  "skills": "cloud and distributed computing"
+}, {
+  "id": 10,
+  "skills": "C/C++"
+}, {
+  "id": 11,
+  "skills": "Java"
+}, {
+  "id": 12,
+  "skills": "Perl/Pyhthon/Ruby"
+}, {
+  "id": 13,
+  "skills": "IBM Mainframe et Systems expert"
+}, {
+  "id": 14,
+  "skills": "software revision control systems"
+}, {
+  "id": 15,
+  "skills": "software QA and user testing"
+}, {
+  "id": 16,
+  "skills": "algorithme design"
+}, {
+  "id": 17,
+  "skills": "mobile developement"
+}, {
+  "id": 18,
+  "skills": "Network Architect"
+}, {
+  "id": 19,
+  "skills": "Technical Infrastructure Architect"
+}, {
+  "id": 20,
+  "skills": "Software architect"
+}, {
+  "id": 21,
+  "skills": "Data Architect"
+}, {
+  "id": 22,
+  "skills": "Information Architect"
+}, {
+  "id": 23,
+  "skills": "HTML5"
+}, {
+  "id": 24,
+  "skills": "CSS"
+}, {
+  "id": 25,
+  "skills": "PHP"
+}]
 
 }
 

@@ -24,8 +24,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   -->
   <link rel="stylesheet" href="/dist/css/skins/skin-blue.min.css">
   <link rel="stylesheet" href="/dist/css/skins/skin-purple-light.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/themes/bootstrap-stars.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -166,9 +165,9 @@ desired effect
       <ul class="sidebar-menu">
         <li class="header">Menu</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="/skillmatch"><i class="fa fa-home"></i> <span>Home</span></a></li>
+        <li><a href="/skillmatch"><i class="fa fa-home"></i> <span>Home</span></a></li>
         <li><a href="/skillmatch/network"><i class="fa fa-bolt"></i> <span>My Network</span></a></li>
-        <li><a href="/skillmatch/search"><i class="fa fa-cogs"></i> <span>Search for Skills</span></a></li>
+        <li class="active"><a href="/skillmatch/search"><i class="fa fa-cogs"></i> <span>Search for Skills</span></a></li>
         <li><a href="/skillmatch/integration"><i class="fa fa-wrench"></i> <span>integrations</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
@@ -194,12 +193,71 @@ desired effect
     <section class="content">
 
       <!-- Your Page Content Here -->
+
+      <!-- notifications --> 
       <div class="row">
+      <!-- /. col -->
         <div class="col-lg-12">
-          
+          <div class="box box-default notification">
+              <div class="box-header with-border">
+                <i class="fa fa-bulb"></i>
+
+                <h3 class="box-title">Search for talent in Credit Agricole</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+              <!--
+                <div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+                  Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
+                  soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                </div>
+                -->
+
+               <form method="POST">
+                 <label>Search</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" name="search"  placeholder="What skills are you looking for?">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-info btn-flat">Go!</button>
+                    </span>
+                  </div>
+               </form>
+                
+              </div>
+              <!-- /.box-body -->
+            </div>
         </div>
+        <% if(users) { %>
+         <div class="col-lg-12">
+            <div class="box box-default notification">
+              <div class="box-header with-border">
+                <i class="fa fa-bulb"></i>
+
+                <h3 class="box-title">Results</h3>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body">
+              <!--
+                <div class="alert alert-danger alert-dismissible">
+                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                  <h4><i class="icon fa fa-ban"></i> Alert!</h4>
+                  Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
+                  soul, like these sweet mornings of spring which I enjoy with my whole heart.
+                </div>
+                -->
+                <%%>
+                
+              </div>
+              <!-- /.box-body -->
+            </div>
+        <%}%>
+        </div>
+        <!-- /. col -->
+
+
       </div>
-      
 
     </section>
     <!-- /.content -->
@@ -300,44 +358,7 @@ desired effect
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/dist/js/app.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="/javascripts/jquery.barrating.min.js"></script>
-<script type="text/javascript">
-   $(function() {
-      $('#example').barrating({
-        theme: 'bootstrap-stars'
-      });
-      $('.yes').click(function(){
-        console.log('step')
-        if($('#notif1_step1').css('display') == 'block') {
-            console.log('step 2')
-            $('#notif1_step1').css('display', 'none')
-            $('#notif1_step3').css('display', 'none')
-            $('#notif1_step2').css('display', 'block')
-        } else if($('#notif1_step2').css('display') == 'block') {
-            console.log('step 3')
-            $('#notif1_step1').css('display', 'none')
-            $('#notif1_step3').css('display', 'block')
-            $('#notif1_step2').css('display', 'none')
-        } else if($('#notif1_step3').css('display') == 'block') {
-            console.log('none')
-            $('#notif1_step1').css('display', 'none')
-            $('#notif1_step3').css('display', 'none')
-            $('#notif1_step2').css('display', 'none')
-            $('.notification').css('display', 'none')
-        }
-        
-      });
-      $('.no').click(function(){
-        console.log('step')
-        $('#notif1_step1').css('display', 'none')
-        $('#notif1_step3').css('display', 'none')
-        $('#notif1_step2').css('display', 'none')
-        $('.notification').css('display', 'none')
-        
-      });
-   });
-</script>
+
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
