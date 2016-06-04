@@ -17,7 +17,7 @@ $(function () {
   var salesChart = new Chart(salesChartCanvas);
 
   var salesChartData = {
-    labels: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
+    labels: ["DIMANCHE 01/05", "LUNDI 02/05 ", "MARDI 03/05", "MERCREDI 04/05", "JEUDI 05/05", "VENDREDI 06/05", "SAMEDI 07/05", "DIMANCHE 08/05", "LUNDI 09/05", "MARDI 10/05", "MERCREDI 11/05", "JEUDI 12/05", "VENDREDI 13/05", "SAMEDI 14/05", "DIMANCHE 15/05", "LUNDI 16/05", "MARDI 17/05", "MERCREDI 18/05", "JEUDI 19/05", "VENDREDI 20/05", "SAMEDI 21/05", "DIMANCHE 22/05", "LUNDI 23/05 ", "MARDI 24/05 ", "MERCREDI 25/05", "JEUDI 26/05 ", "VENDREDI 27/05", "SAMEDI 28/05", "DIMANCHE 29/05", "LUNDI 30/05", "MARDI 31/05"],
     datasets: [
       {
         label: "Malcolm",
@@ -28,7 +28,7 @@ $(function () {
         pointStrokeColor: "#c1c7d1",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "rgb(220,220,220)",
-        data: [50, 55, 36, 33, 54, 7, 5, 50, 53, 36, 40, 39, 1, 3, 42, 45, 36, 43, 40, 7, 3, 59, 42, 40, 35, 36, 3, 2]
+        data: [5, 50, 55, 36, 33, 54, 7, 5, 50, 53, 36, 40, 39, 1, 3, 42, 45, 36, 43, 40, 7, 3, 59, 42, 40, 35, 36, 3, 2, 49, 46]
       },
       {
         label: "Moyenne",
@@ -39,7 +39,7 @@ $(function () {
         pointStrokeColor: "rgba(102,102,102,1)",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "rgba(220,220,200,1)",
-        data: [40, 38, 37, 34, 42, 5, 3, 38, 42, 36, 39, 37, 2, 4, 40, 34, 32, 31, 35, 3, 1, 39, 34, 35, 33, 37, 1, 0]
+        data: [3, 40, 38, 37, 34, 42, 5, 3, 38, 42, 36, 39, 37, 2, 4, 40, 34, 32, 31, 35, 3, 1, 39, 34, 35, 33, 37, 1, 0, 41, 37]
       }
     ]
   };
