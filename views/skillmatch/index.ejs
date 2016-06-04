@@ -24,6 +24,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   -->
   <link rel="stylesheet" href="/dist/css/skins/skin-blue.min.css">
   <link rel="stylesheet" href="/dist/css/skins/skin-purple-light.min.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/themes/bootstrap-stars.css">
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -166,13 +168,8 @@ desired effect
         <!-- Optionally, you can add icons to the links -->
         <li class="active"><a href="#"><i class="fa fa-home"></i> <span>Home</span></a></li>
         <li><a href="#"><i class="fa fa-bolt"></i> <span>My Network</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span> <i class="fa fa-angle-left pull-right"></i></a>
-          <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
-          </ul>
-        </li>
+        <li><a href="#"><i class="fa fa-bolt"></i> <span>Search for Skills</span></a></li>
+        <li><a href="#"><i class="fa fa-bolt"></i> <span>integrations</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>
@@ -202,7 +199,7 @@ desired effect
       <div class="row">
       <!-- /. col -->
         <div class="col-lg-12">
-          <div class="box box-default">
+          <div class="box box-default notification">
               <div class="box-header with-border">
                 <i class="fa fa-warning"></i>
 
@@ -218,22 +215,44 @@ desired effect
                   soul, like these sweet mornings of spring which I enjoy with my whole heart.
                 </div>
                 -->
-                <div class="text-center" id="notif1">
+                <div class="text-center" id="notif1_step1" style="display:block">
                   <div class="pull-right">1/2</div>
                   <h2>We noticed that your work is evolving around</br> <b>NodeJS</b><br><small>Do you confirm?</small></h2>
                   <ul class="list-inline">
-                    <li><button class="btn btn-success btn-lg">Yes</button> </li>
-                    <li><button class="btn btn-warning btn-lg">No</button></li>
+                    <li><button class="btn btn-success btn-lg yes" id="yes">Yes</button> </li>
+                    <li><button class="btn btn-warning btn-lg" id="no">No</button></li>
                   </ul>
                 </div>
-                <div class="text-center" id="notif2" style="display:none">
+                <div class="text-center" id="notif1_step2" style="display:none">
                   <div class="pull-right">1/2</div>
-                  <h2>We noticed that your work is evolving around</br> <b>NodeJS</b><br><small>Do you confirm?</small></h2>
+                  <h2>How well do you rank yourself?</small></h2>
+                  <select id="example">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                  </select>
                   <ul class="list-inline">
-                    <li><button class="btn btn-success btn-lg">Yes</button> </li>
-                    <li><button class="btn btn-warning btn-lg">No</button></li>
+                    <li><button class="btn btn-success btn-lg yes" id="yes">Validate</button> </li>
+                    <li><button class="btn btn-warning btn-lg" id="no">Cancel</button></li>
                   </ul>
                 </div>
+                <div class="text-center" id="notif1_step3" style="display:none">
+                  <div class="pull-right">1/2</div>
+                  <h2>Do you want to be solicitated for this topic?</small></h2>
+                  
+                  <ul class="list-inline">
+                    <li><button class="btn btn-success btn-lg yes" id="yes">Yes</button> </li>
+                    <li><button class="btn btn-warning btn-lg" id="no">No</button></li>
+                  </ul>
+                </div>
+               
                 
               </div>
               <!-- /.box-body -->
@@ -418,6 +437,37 @@ desired effect
 <script src="/bootstrap/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/dist/js/app.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="/javascripts/jquery.barrating.min.js"></script>
+<script type="text/javascript">
+   $(function() {
+      $('#example').barrating({
+        theme: 'bootstrap-stars'
+      });
+      $('.yes').click(function(){
+        console.log('step')
+        if($('#notif1_step1').css('display') == 'block') {
+            console.log('step 2')
+            $('#notif1_step1').css('display', 'none')
+            $('#notif1_step3').css('display', 'none')
+            $('#notif1_step2').css('display', 'block')
+        } else if($('#notif1_step2').css('display') == 'block') {
+            console.log('step 3')
+            $('#notif1_step1').css('display', 'none')
+            $('#notif1_step3').css('display', 'block')
+            $('#notif1_step2').css('display', 'none')
+        } else if($('#notif1_step3').css('display') == 'block') {
+            console.log('none')
+            $('#notif1_step1').css('display', 'none')
+            $('#notif1_step3').css('display', 'none')
+            $('#notif1_step2').css('display', 'none')
+            $('.notification').css('display', 'none')
+        }
+        
+      });
+   });
+</script>
+
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
      Both of these plugins are recommended to enhance the
