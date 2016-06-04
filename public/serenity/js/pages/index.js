@@ -17,27 +17,27 @@ $(function () {
   var salesChart = new Chart(salesChartCanvas);
 
   var salesChartData = {
-    labels: ["January", "February", "March", "April", "May", "June", "July"],
+    labels: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
     datasets: [
       {
-        label: "Electronics",
-        fillColor: "rgb(210, 214, 222)",
-        strokeColor: "rgb(210, 214, 222)",
-        pointColor: "rgb(210, 214, 222)",
+        label: "Malcolm",
+        fillColor: "rgb(240,35,17)",
+        strokeColor: "rgb(240,35,17)",
+        pointColor: "rgb(240,35,17)",
         pointStrokeColor: "#c1c7d1",
         pointHighlightFill: "#fff",
         pointHighlightStroke: "rgb(220,220,220)",
-        data: [65, 59, 80, 81, 56, 55, 40]
+        data: [50, 55, 36, 33, 54, 7, 5, 50, 53, 36, 40, 39, 1, 3, 42, 45, 36, 43, 40, 7, 3, 59, 42, 40, 35, 36, 3, 2]
       },
       {
-        label: "Digital Goods",
-        fillColor: "rgba(60,141,188,0.9)",
-        strokeColor: "rgba(60,141,188,0.8)",
-        pointColor: "#3b8bba",
-        pointStrokeColor: "rgba(60,141,188,1)",
+        label: "Moyenne",
+        fillColor: "rgba(102,102,102, 1)",
+        strokeColor: "rgba(102,102,102, 1)",
+        pointColor: "#555",
+        pointStrokeColor: "rgba(102,102,102,1)",
         pointHighlightFill: "#fff",
-        pointHighlightStroke: "rgba(60,141,188,1)",
-        data: [28, 48, 40, 19, 86, 27, 90]
+        pointHighlightStroke: "rgba(220,220,200,1)",
+        data: [40, 38, 37, 34, 42, 5, 3, 38, 42, 36, 39, 37, 2, 4, 40, 34, 32, 31, 35, 3, 1, 39, 34, 35, 33, 37, 1, 0]
       }
     ]
   };
