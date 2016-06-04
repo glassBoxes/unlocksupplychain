@@ -32,6 +32,100 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+    <style type="text/css">
+    body {
+      font: 10pt arial;
+    }
+    #mynetwork {
+      width: 100%;
+      height: 800px;
+      background-color:white;
+    }
+  </style>
+
+  <script type="text/javascript" src="/dist/js/vis.js"></script>
+  <link href="/dist/css/vis.css" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript"> 
+    var DIR = '/dist/img/photos_hackathon/';
+
+    var nodes = null;
+    var edges = null;
+    var network = null;
+
+    // Called when the Visualization API is loaded.
+    function draw() {
+      // create people.
+      // value corresponds with the age of the person
+      var DIR = '/dist/img/photos_hackathon/';
+      nodes = [
+        {id: 2,  shape: 'circularImage', image: DIR + '2.jpg'},
+        {id: 7,  shape: 'circularImage', image: DIR + '7.jpg'},
+        {id: 9,  shape: 'circularImage', image: DIR + '9.jpg'},
+    {id: 16, shape: 'circularImage', image: DIR + '16.jpg'},
+    {id: 17, shape: 'circularImage', image: DIR + '17.jpg'},
+    {id: 18, shape: 'circularImage', image: DIR + '18.jpg'},
+    {id: 19, shape: 'circularImage', image: DIR + '19.jpg'},
+    {id: 20, shape: 'circularImage', image: DIR + '20.jpg'},
+    {id: 24, shape: 'circularImage', image: DIR + '24.jpg'},
+    {id: 25, shape: 'circularImage', image: DIR + '25.jpg'},
+    {id: 26, shape: 'circularImage', image: DIR + '26.jpg'},
+    {id: 27, shape: 'circularImage', image: DIR + '27.jpg'},
+    {id: 28, shape: 'circularImage', image: DIR + '28.jpg'},
+    {id: 29, shape: 'circularImage', image: DIR + '29.jpg'}
+
+      ];
+
+      // create connections between people
+      // value corresponds with the amount of contact between two people
+      edges = [
+    {from: 2, to: 24},
+    {from: 2, to: 27},
+    {from: 7, to: 24},
+    {from: 17, to: 16},
+    {from: 16, to: 9},
+    {from: 25, to: 9},
+    {from: 26, to: 9},
+    {from: 27, to: 9},
+    {from: 16, to: 18},
+    {from: 16, to: 19},
+    {from: 16, to: 20},
+    {from: 2, to: 18},
+    {from: 7, to: 18},
+        {from: 19, to: 20},
+    {from: 25, to: 28},
+    {from: 26, to: 28},
+    {from: 27, to: 28},
+    {from: 29, to: 16},
+    {from: 29, to: 18},
+    {from: 29, to: 9}
+      ];
+
+      // create a network
+      var container = document.getElementById('mynetwork');
+      var data = {
+        nodes: nodes,
+        edges: edges
+      };
+      var options = {
+        nodes: {
+          borderWidth:2,
+          size:30,
+        color: {
+            border: 'white',
+            background: 'white'
+          },
+          font:{color:'black'}
+        },
+        edges: {
+          color: 'black'
+        }
+      };
+      network = new vis.Network(container, data, options);
+    }
+  </script>
+
 </head>
 <!--
 BODY TAG OPTIONS:
@@ -53,7 +147,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition skin-purple-light  sidebar-mini">
+<body class="hold-transition skin-purple-light  sidebar-mini" onload="draw()">
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -195,147 +289,22 @@ desired effect
 
       <!-- Your Page Content Here -->
 
-      <!-- notifications --> 
       <div class="row">
-      <!-- /. col -->
         <div class="col-lg-12">
-          <div class="box box-default notification">
-              <div class="box-header with-border">
-                <i class="fa fa-warning"></i>
+        <div class="box box-default">
+            <div class="box-header with-border">
+              <i class="fa fa-warning"></i>
 
-                <h3 class="box-title">You have 1 skills to evaluate</h3>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body">
-              <!--
-                <div class="alert alert-danger alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <h4><i class="icon fa fa-ban"></i> Alert!</h4>
-                  Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
-                  soul, like these sweet mornings of spring which I enjoy with my whole heart.
-                </div>
-                -->
-                <div class="text-center" id="notif1_step1" style="display:block">
-                  <div class="pull-right">1/2</div>
-                  <h2>We noticed that your work is evolving around</br> <b>NodeJS</b><br><small>Do you confirm?</small></h2>
-                  <ul class="list-inline">
-                    <li><button class="btn btn-success btn-lg yes" id="yes">Yes</button> </li>
-                    <li><button class="btn btn-warning btn-lg no" id="no">No</button></li>
-                  </ul>
-                </div>
-                <div class="text-center" id="notif1_step2" style="display:none">
-                  <div class="pull-right">2/3</div>
-                  <h2>How well do you rank yourself?</small></h2>
-                  <select id="example">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                  </select>
-                  <ul class="list-inline">
-                    <li><button class="btn btn-success btn-lg yes" id="yes">Validate</button> </li>
-                    <li><button class="btn btn-warning btn-lg no" id="no">Cancel</button></li>
-                  </ul>
-                </div>
-                <div class="text-center" id="notif1_step3" style="display:none">
-                  <div class="pull-right">3/3</div>
-                  <h2>Do you want to be solicitated for this topic?</small></h2>
-                  
-                  <ul class="list-inline">
-                    <li><button class="btn btn-success btn-lg yes" id="yes">Yes</button> </li>
-                    <li><button class="btn btn-warning btn-lg no" id="no">No</button></li>
-                  </ul>
-                </div>
-               
-                
-              </div>
-              <!-- /.box-body -->
+              <h3 class="box-title">Your network</h3>
             </div>
-        </div>
-        <!-- /. col -->
-
-        
-
-        <!-- /. col -->
-        <div class="col-lg-6">
-          <div class="box box-default">
-              <div class="box-header with-border">
-                <i class="fa fa-cogs"></i>
-
-                <h3 class="box-title">Your skills</h3>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body">
-              <!--
-                <div class="alert alert-danger alert-dismissible">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                  <h4><i class="icon fa fa-ban"></i> Alert!</h4>
-                  Danger alert preview. This alert is dismissable. A wonderful serenity has taken possession of my entire
-                  soul, like these sweet mornings of spring which I enjoy with my whole heart.
-                </div>
-                -->
-                <ul class="nav nav-stacked">
-                <% myskills.forEach(function(myskill){ %>
-                    <li><a href="#"><%= myskill.skill %>
-                      <span class="pull-right badge bg-blue">
-                      <% for (var i = 0; i < myskill.note; i++) { %>
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                      <% } %>
-                     <%= myskill.note %>/10</span></a></li>
-                <% }); %>
-                  
-                  <li><a href="#">Javascript <span class="pull-right badge bg-blue">9/10</span></a></li>
-                </ul> 
-                  
-                
-              </div>
-              <!-- /.box-body -->
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div id="mynetwork"></div>
             </div>
+            <!-- /.box-body -->
+          </div>
+          
         </div>
-        <!-- /. col -->
-
-        <!-- /. col -->
-        <div class="col-lg-6">
-          <div class="box box-default">
-              <div class="box-header with-border">
-                <i class="fa fa-user-plus"></i>
-
-                <h3 class="box-title">They are interrested by your skills</h3>
-              </div>
-              <!-- /.box-header -->
-              <div class="box-body">
-                <ul class="nav nav-stacked">
-                  
-                  <% for (var i = 0; i < 20; i++) { %>
-                  <% var user = users [i]; %>
-                  <div class="pull-right">
-                      <button class="btn btn-primary">contact</button>
-                  </div>
-                  <li>
-                      <div class="user-block" style="margin-bottom:10px;">
-                        <img class="img-circle" src="../profile/<%= user.picture %>" alt="User Image">
-                        <span class="username"><a href="#"><%= user.first_name %> <%= user.last_name %></a></span>
-                        <span class="description"><%= user.position %></span>
-                      </div>
-                  </li>
-                  <% 
-                  }; %>
-                 
-                  
-                </ul>
-                
-              </div>
-              <!-- /.box-body -->
-            </div>
-        </div>
-        <!-- /. col -->
-
       </div>
 
     </section>
