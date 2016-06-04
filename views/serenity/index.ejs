@@ -26,6 +26,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Date Picker -->
   <link rel="stylesheet" href="/plugins/datepicker/datepicker3.css">
 
+  <!-- Ion Slider -->
+  <link rel="stylesheet" href="../../plugins/ionslider/ion.rangeSlider.css">
+  <!-- ion slider Nice -->
+  <link rel="stylesheet" href="../../plugins/ionslider/ion.rangeSlider.skinNice.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -207,8 +212,8 @@ desired effect
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Page Header
-        <small>Optional description</small>
+        Serenity
+        <small>Votre panneau de commande</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
@@ -226,9 +231,9 @@ desired effect
       <div class="col-md-6">
           <div class="box box-default">
             <div class="box-header with-border">
-              <i class="fa fa-bullhorn"></i>
+              <i class="fa fa-calendar-check-o"></i>
 
-              <h3 class="box-title">Callouts</h3>
+              <h3 class="box-title">Jours de congés</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body bg-green-gradient">
@@ -236,6 +241,15 @@ desired effect
               <div id="calendar" style="width: 100%"></div>
             </div>
             <!-- /.box-body -->
+
+            <div class="box-footer no-border">
+            <br />
+            <span><b>Horaires de travail</b></span>
+            <br/>
+            <br/>
+                  <input id="range_1" type="text" name="range_1" value="">
+                  <br/>
+            </div>
           </div>
           <!-- /.box -->
         </div>
@@ -259,13 +273,13 @@ desired effect
               <div class="callout callout-info">
                 <h4>Formation</h4>
 
-                <p>Pour limiter les sources de stress, la gestion du temps est un facteur clé. Inscrivez-vous à notre formation « Bien gérer son temps de travail » !</p>
+                <p>Pour limiter les sources de stress, la gestion du temps est un facteur clé. Inscrivez-vous à notre <b>formation « Bien gérer son temps de travail » !</b></p>
               </div>
 
               <div class="callout callout-success">
                 <h4>Conseil</h4>
 
-                <p>Pensez aussi à échanger aussi de façon informelle avec vos interlocuteurs sur d’autres sujets. Pourquoi ne pas programmer un déjeuner ou utiliser le chat ?</p>
+                <p>Pensez aussi à échanger aussi de façon informelle avec vos interlocuteurs sur d’autres sujets. <b>Pourquoi ne pas programmer un déjeuner ou utiliser le chat ?</b></p>
               </div>
               
             </div>
@@ -509,6 +523,24 @@ desired effect
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/serenity/js/pages/index.js"></script>
+
+<!-- Ion Slider -->
+<script src="/plugins/ionslider/ion.rangeSlider.min.js"></script>
+
+<script>
+ /* ION SLIDER */
+    $("#range_1").ionRangeSlider({
+      min: 0,
+      max: 24,
+      from: 9,
+      to: 18,
+      type: 'double',
+      step: 1,
+      postfix: "h",
+      prettify: false,
+      hasGrid: true
+    });
+</script>
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
