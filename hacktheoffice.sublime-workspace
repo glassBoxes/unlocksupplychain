@@ -1,0 +1,738 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fu",
+				"function"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"in",
+				"inactive"
+			],
+			[
+				"Pro",
+				"Production"
+			],
+			[
+				"opt",
+				"optionsGestion"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"ov",
+				"overflow-x"
+			],
+			[
+				"op",
+				"optionsAll"
+			],
+			[
+				"optio",
+				"optionsBank"
+			],
+			[
+				"co",
+				"colorThemes"
+			],
+			[
+				"lin",
+				"lineArray"
+			],
+			[
+				"ca",
+				"categories"
+			],
+			[
+				"qui",
+				"quizzes"
+			],
+			[
+				"li",
+				"lineArray"
+			],
+			[
+				"ag",
+				"age_dis"
+			],
+			[
+				"cre",
+				"createSalesByYearChart"
+			],
+			[
+				"sales",
+				"SalesByMonth"
+			],
+			[
+				"is",
+				"isDriver"
+			],
+			[
+				"n",
+				"not"
+			],
+			[
+				"a",
+				"avatarURL"
+			],
+			[
+				"js",
+				"json_friend"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"f",
+				"False"
+			],
+			[
+				"print",
+				"printGrille"
+			],
+			[
+				"ra",
+				"range"
+			],
+			[
+				"ne",
+				"newLine"
+			],
+			[
+				"ge",
+				"getNewLine"
+			],
+			[
+				"genLine",
+				"genLine"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app.js",
+			"settings":
+			{
+				"buffer_size": 1482,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 330,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 347.0,
+		"last_filter": "inde",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indent JSON"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 72.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Poulpi/Dev/hacktheoffice/hacktheoffice/bin",
+		"/Users/Poulpi/Dev/hacktheoffice/hacktheoffice/node_modules",
+		"/Users/Poulpi/Dev/hacktheoffice/hacktheoffice/public",
+		"/Users/Poulpi/Dev/hacktheoffice/hacktheoffice/routes",
+		"/Users/Poulpi/Dev/hacktheoffice/hacktheoffice/views"
+	],
+	"file_history":
+	[
+		"/Users/Poulpi/Dev/node/spotibook/cred.txt",
+		"/Users/Poulpi/Dev/Android/google-services/android/gcm/app/src/main/res/layout/fragment_todo.xml",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/unknown/com/aquafadas/dp/connection/resources/Preprod/certificat.aveapp",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/unknown/com/aquafadas/dp/connection/resources/certificat.aveapp",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/smali/com/aquafadas/utils/DeviceUtils$DeviceType.smali",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/smali/com/aquafadas/utils/DeviceUtils.smali",
+		"/var/folders/f2/82fzj89s2fx0mvhzy5_qbg380000gn/T/mproxykO2uHS",
+		"/var/folders/f2/82fzj89s2fx0mvhzy5_qbg380000gn/T/mproxyXoi9rq.json",
+		"/var/folders/f2/82fzj89s2fx0mvhzy5_qbg380000gn/T/mproxyLEDOlB",
+		"/var/folders/f2/82fzj89s2fx0mvhzy5_qbg380000gn/T/mproxysYAhJ9",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/smali_classes2/com/aquafadas/dp/connection/UserData.smali",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$29.smali",
+		"/Users/Poulpi/Dev/Android/mitmproxy/apk/base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$RequestCallback.smali",
+		"/Users/Poulpi/Library/Java/Extensions/libdpconnect.so",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/webcomponentsjs/ShadowDOM.js",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/webcomponentsjs/webcomponents.js",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/topeka-elements/topeka-profile.html",
+		"/Users/Poulpi/Dev/polymer/topekav2/topeka/components/topeka-elements/topeka-categories.html",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/icons/go.svg",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/topeka-elements/topeka-categories.css",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/topeka-elements/spider-chart.html",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/topeka-elements/categories.json",
+		"/Users/Poulpi/Downloads/noun_78511_cc.svg",
+		"/Users/Poulpi/Downloads/noun_25441_cc.svg",
+		"/Users/Poulpi/Dev/polymer/mat/mat.csv",
+		"/Users/Poulpi/Dev/polymer/mat/Matrice de maturité-Tableau 1.csv",
+		"/Users/Poulpi/Dev/polymer/be-digital-topeka/topeka/components/core-icons/action-icons.html",
+		"/Users/Poulpi/Dev/polymer/be-digital/.editorconfig",
+		"/Users/Poulpi/Dev/polymer/starter-app/firstapp/platforms/platforms.json",
+		"/Users/Poulpi/Dev/polymer/starter-app/bower.json",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/js/pleasure.js",
+		"/Users/Poulpi/Documents/pharmacie.txt",
+		"/Users/Poulpi/Documents/Hackathon MBF2/NotesJourneeLancementUsineIO",
+		"/Users/Poulpi/Dev/Android/paietachouette/out.txt",
+		"/Users/Poulpi/Downloads/dex-method-counts-master/out.txt",
+		"/Users/Poulpi/Dev/appengine/files/events.json",
+		"/Users/Poulpi/Dev/appengine/app.yaml",
+		"/Users/Poulpi/Documents/key.asc",
+		"/Users/Poulpi/Documents/key2.asc",
+		"/Users/Poulpi/Documents/Perso/::: La finale",
+		"/Users/Poulpi/Documents/F816FAE4.asc",
+		"/Users/Poulpi/Documents/8C9B413C.asc",
+		"/Users/Poulpi/Documents/key6.asc",
+		"/Users/Poulpi/Documents/key8.asc",
+		"/Users/Poulpi/Documents/poulpiBlog/README.markdown",
+		"/Users/Poulpi/Dev/Blog/README.md",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/elements/less/elements/misc.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/variables.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/elements/less/elements.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/layouts/layer-menu.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/layouts/navbar.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/layouts/header.less",
+		"/Users/Poulpi/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/elements/less/elements/charts.less",
+		"/Users/Poulpi/Downloads/Feuille de calcul sans titre - Feuille 3.csv",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/scripts/charts-chartjs.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/scripts/maps-vector.js",
+		"/Users/Poulpi/Downloads/Forecasted Utilization Detailed by Team Group.xml",
+		"/Users/Poulpi/Downloads/hammerhead-mra58k/flash-all.sh",
+		"/Users/Poulpi/Dev/lv/prez finale",
+		"/Users/Poulpi/Dev/lv/Hackaton/app/admin1/index.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/index2.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/scripts/index.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/grunt/Gruntfile.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/admin1.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/themes/default.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/js/layout.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/js/simulate.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/admin1/js/layout.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/admin1/less/themes/brown.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/gulp/gulpfile.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/bower/bower.json",
+		"/Users/Poulpi/Downloads/Home Domain/Library/AddressBook/clea.sql",
+		"/Users/Poulpi/Downloads/14c59841c74bbe952de60d09aa465ec33a595cb2/Status.plist",
+		"/Users/Poulpi/Downloads/14c59841c74bbe952de60d09aa465ec33a595cb2/Manifest.plist",
+		"/Users/Poulpi/Downloads/14c59841c74bbe952de60d09aa465ec33a595cb2/Info.plist",
+		"/Users/Poulpi/Dev/ML/imdb-scrapper.py",
+		"/Users/Poulpi/Dev/appengine/main.py",
+		"/Users/Poulpi/Dev/Blog/css/clean-blog.min.css",
+		"/Users/Poulpi/Dev/Blog/js/clean-blog.js",
+		"/Users/Poulpi/Dev/Blog/css/clean-blog.css",
+		"/Users/Poulpi/Dev/Blog/js/clean-blog.min.js",
+		"/Users/Poulpi/Dev/Blog/Gemfile",
+		"/Users/Poulpi/Documents/Perso/objectifs_BE.txt",
+		"/Users/Poulpi/Dev/Michaël/sudoku/gen.py",
+		"/Users/Poulpi/Dev/Michaël/main.py",
+		"/Users/Poulpi/Dev/Android/hacky/pf.conf",
+		"/Users/Poulpi/Dev/Blog/_posts/2015-01-01-this-is-the-beginning-of-something-promising.markdown",
+		"/Users/Poulpi/Downloads/hammerhead-lmy48m/flash-all.sh",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/globals/less/fonts.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/cards-image.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/globals/less/helpers.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/css/elements.css",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/admin1/css/admin1.css",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/forms-general.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/cards-clickable.html",
+		"/Users/Poulpi/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/charts-chartjs.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/maps-vector.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/pallas-china.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/app/admin1/index.html",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/assets/globals/plugins/jqvmap/jqvmap/data/jquery.vmap.sampledata.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/build/elements/less/pages/user-pages.less",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/documentation/build/js/global-vendors.js",
+		"/Users/Poulpi/Dev/lv/Hackaton/front end/themeforest-10579013-pleasure-material-design-responsive-admin-panel/documentation/assets/js/global-vendors.js",
+		"/Users/Poulpi/Downloads/14c59841c74bbe952de60d09aa465ec33a595cb2/0a0aa77c437f1a818eaaea480c39a330e2492977",
+		"/Users/Poulpi/Downloads/ratings.list",
+		"/Users/Poulpi/Downloads/movies.list",
+		"/Users/Poulpi/Downloads/aka-titles.list",
+		"/Users/Poulpi/Downloads/technical.list",
+		"/Users/Poulpi/Dev/Android/paietachouette/gradle/wrapper/gradle-wrapper.properties",
+		"/Users/Poulpi/Downloads/fr/creditagricole/simone/dataprovider/dto/json/CompteDTO.java",
+		"/Volumes/Kivy/examples/application/app_with_kv.py",
+		"/Volumes/Kivy/examples/animation/animate.py",
+		"/Volumes/Kivy/examples/application/test.kv",
+		"/Users/Poulpi/Downloads/Disillusion/1600/TPProject.tps",
+		"/Users/Poulpi/Downloads/Suits.S04E11.Enough.Is.Enough.1080p.WEB-DL.DD5.1.H.264-NTb[rarbg].torrent",
+		"/Users/Poulpi/Dev/solarus/cmake/AddDependencies.cmake",
+		"/Users/Poulpi/Dev/solarus/cmake/AddSolarusLibrary.cmake",
+		"/Users/Poulpi/Dev/solarus/cmake/AddSolarusExecutable.cmake",
+		"/Users/Poulpi/Dev/solarus/cmake/AddInstallTargets.cmake",
+		"/Users/Poulpi/Dev/solarus/cmake/AddCompilationFlags.cmake",
+		"/Users/Poulpi/Dev/Blog/_posts/2013-12-26-common-fact-debunking-2-les-carottes-font-elles-des-maths-le-soir.markdown",
+		"/Users/Poulpi/Dev/Blog/_posts/2014-01-28-the-land-of-the-dead.markdown",
+		"/Users/Poulpi/Dev/Blog/_posts/2013-12-06-syncount-parlons-un-peu-d-architecture-part-1-serveur.markdown",
+		"/Users/Poulpi/Dev/Blog/_posts/2013-06-13-monster-munch.markdown",
+		"/Users/Poulpi/Dev/Blog/_posts/2013-06-17-lenfer-sur-terre.markdown",
+		"/Users/Poulpi/Dev/Blog/_posts/2013-11-29-syncount.markdown"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"script",
+			"body",
+			"html",
+			"footer",
+			"fonts",
+			"../",
+			"Apl",
+			"heal",
+			"grow",
+			"dpi-v11",
+			"ic_stat_icon",
+			"dpi/",
+			"mipmap",
+			"ic_launcher",
+			"/Users/Poulpi/Downloads/noun_27507_cc.svg",
+			"issueId",
+			"getIssue",
+			"AFDPConnectionRequestAllAcquiredIssues",
+			"\"getSource",
+			"preprod",
+			"prod",
+			"voucher",
+			"AFDPConnectionRequestUseVouncher",
+			"\"getSource",
+			"getSource",
+			"TEST",
+			"TEST;test",
+			"receipt",
+			"createOnIssueAddedListener",
+			"access$4100",
+			"addIssueToCurrentAccount",
+			"addIssue",
+			"buildFinalReceipt",
+			"access$2500",
+			"receipt",
+			"\"getSource\"",
+			"getSource",
+			"AFDPConnectionRequestAddIssue",
+			"addissue",
+			"AsyncDPRequestTask",
+			"init",
+			"addissue",
+			"buildFinalReceipt",
+			"access$2500",
+			"p3",
+			"_connectionTypeKey",
+			"getConnectionTypeKey",
+			"connectionType",
+			"v6",
+			"getDeviceInformations",
+			"issueId",
+			"v8",
+			"public connect",
+			"connect",
+			"issueId",
+			"addProductToCurrentAccount",
+			"addIssue(",
+			"addIssue",
+			"KioskKitController$73;-><init",
+			"signature",
+			"addIssueToCurrentAccount",
+			"access$2500",
+			"buildFinalReceipt",
+			"access$2500",
+			"AFDPConnectionRequestAddIssue",
+			"signature",
+			"AFDPConnectionRequestAddIssue",
+			"0x135",
+			"309",
+			"dataDictionaryWithString",
+			"encodeStringWithInfo",
+			"dataDictionaryWithString",
+			"AFDPConnectionRequestIssueSource",
+			"getSourceFromZaveId",
+			"cond_3",
+			"access$3700",
+			"cond_8",
+			"v6",
+			"iput-object",
+			"init",
+			"AFDPConnectionRequestSourceByZaveId",
+			"v4",
+			"RequestCallback",
+			"v3",
+			"getSourceFromZaveId",
+			"postdatamap",
+			"access$3800",
+			"getSourceFromZaveId",
+			"connect(",
+			"connect",
+			"connectWithDeviceID",
+			"connect(",
+			"connect",
+			"connectWithDeviceID",
+			"pattern",
+			"v0",
+			"setUserSessionToken",
+			"_userSessionToken",
+			"getUserSessionToken",
+			"getsession",
+			"getHardwareDeviceID",
+			"getOpenUDID",
+			"\"token\"",
+			"token",
+			"getSourceByZaveId",
+			"RequestType(.){0,6}-><init",
+			"RequestType(.){0,6}->init",
+			"RequestType;->init",
+			"Ljava/util/Map(.){0,5}<Lcom/aquafadas/dp/connection/ConnectionHelper$AFDPConnectionRequest;",
+			"mapRequest",
+			"Map<ConnectionHelper$AFDPConnectionRequest",
+			"executeSessionTask",
+			"AsyncDPRequestTask;->submit",
+			"submit",
+			"AsyncDPRequestTask(.){0,10};->",
+			"AsyncDPRequestTask(.){0-10};->",
+			"AsyncDPRequestTask(.)[0-10];->",
+			";->execute(",
+			";->execute",
+			".method",
+			"submit",
+			"AsyncDPRequestTask;-",
+			"AsyncDPRequestTask;",
+			"AsyncDPRequestTask;->exe",
+			"execute(",
+			"AsyncDPRequestTask",
+			"AsyncDPRequestTask().execute",
+			"doInBackground"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"./fonts",
+			"",
+			"ideas",
+			"heal",
+			"grow_selected",
+			"dpi",
+			"grow",
+			"dpi-v11/",
+			"drawable",
+			"ic_stat_icon",
+			"/Users/Poulpi/Dev/icons/source/ic_launcher.svg",
+			"",
+			"./fastboot",
+			"",
+			"Vuitton",
+			"Lora",
+			"Comic Neue",
+			"Open Sans",
+			"Comic Neue"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1482,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 330,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hacktheoffice.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"afdpconnectionrequest",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$AFDPConnectionRequest.smali"
+			],
+			[
+				"",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$AFDPConnectionRequest.smali"
+			],
+			[
+				"requestty",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$RequestType.smali"
+			],
+			[
+				"connec",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$1.smali"
+			],
+			[
+				"asyncdprequesttask",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$AsyncDPRequestTask.smali"
+			],
+			[
+				"requestcallback",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$RequestCallback.smali"
+			],
+			[
+				"connectionhelper$29",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$29.smali"
+			],
+			[
+				"connectionhelper$1",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$1.smali"
+			],
+			[
+				"requesttype",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$RequestType.smali"
+			],
+			[
+				"requesty",
+				"base/smali_classes2/com/google/android/gms/games/internal/constants/RequestType.smali"
+			],
+			[
+				"deviceutils",
+				"base/smali/com/aquafadas/utils/DeviceUtils.smali"
+			],
+			[
+				"deviceutiles",
+				"base/smali/com/aquafadas/utils/DeviceUtils$DeviceType.smali"
+			],
+			[
+				"requesttyp",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$RequestType.smali"
+			],
+			[
+				"requestt",
+				"base/smali_classes2/com/google/android/gms/games/internal/constants/RequestType.smali"
+			],
+			[
+				"baseasynctask",
+				"base/smali/com/aquafadas/utils/BaseAsyncTask.smali"
+			],
+			[
+				"asyncdprequ",
+				"base/smali_classes2/com/aquafadas/dp/connection/ConnectionHelper$AsyncDPRequestTask.smali"
+			],
+			[
+				"profi",
+				"topeka/components/topeka-elements/topeka-profile.html"
+			],
+			[
+				"fin",
+				"Find Results"
+			],
+			[
+				"sw",
+				"sw.js"
+			],
+			[
+				"pl",
+				"~/Dev/polymer/mat/plain.py"
+			],
+			[
+				"upd",
+				"components/core-icons/update-icons.sh"
+			],
+			[
+				"cat",
+				"components/topeka-elements/category-icons.html"
+			],
+			[
+				"cate",
+				"components/topeka-elements/categories.json"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 305.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
