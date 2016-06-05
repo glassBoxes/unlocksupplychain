@@ -99,7 +99,7 @@ var data = {users :[{"id":1,"gender":"Male","first_name":"George","last_name":"L
 {"id":99,"gender":"Male","first_name":"Gary","last_name":"Duncan","email":"gduncan2q@icio.us","position":"software revision control systems","picture":"17.jpg"},
 {"id":100,"gender":"Female","first_name":"Pamela","last_name":"Payne","email":"ppayne2r@sphinn.com","position":"Java Development expert","picture":"11.jpg"}],
 categories: ['Web expert','Android expert','Expert modélisation et design 3D','E-mail marketing Expert ','Business Process Outsourcing Expert ','SEO Expert','Statistical analysis and data mining','Cloud and distributed computing expert ',' C/C++ expert','Java Development expert ','Perl/Pyhthon/Ruby Expert','IBM Mainframe et Systems expert','software revision control systems','software QA and user testing','algorithme design','mobile developement','Network Architect.','Technical Infrastructure Architect','Software architect','Data Architect','Information Architect'],
-myskills: [{"id":1,"skill":"Data Architect","note":5},
+myskills: [{"id":1,"skill":"NodeJS","note":5},
 {"id":2,"skill":"Perl/Pyhthon/Ruby","note":2},
 {"id":3,"skill":"android","note":10},
 {"id":4,"skill":"software QA and user testing","note":2},
